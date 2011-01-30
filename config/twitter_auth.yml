@@ -17,7 +17,7 @@ test:
   api_timeout: 10
   remember_for: 999 # days
   oauth_callback: "http://localhost:3000/oauth_callback"
-development:
+production:
   strategy: oauth
   oauth_consumer_key: Ln2AGj3PSGTq46mmbc8V6g
   oauth_consumer_secret: nddjE6aeA9NBC1h5xbDydz9261Vbu715ObWW7VELjs8
