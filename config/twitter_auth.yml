@@ -1,13 +1,13 @@
 
 development:
   strategy: oauth
-  oauth_consumer_key: Ln2AGj3PSGTq46mmbc8V6g
-  oauth_consumer_secret: nddjE6aeA9NBC1h5xbDydz9261Vbu715ObWW7VELjs8
+  oauth_consumer_key: nuKZDHHjzepLl6AhtguzbQ
+  oauth_consumer_secret: mem7IWvnPvM2H1W2MNjOrb39h9qD2CnH9o7dqnWKw
   base_url: "https://twitter.com"
   authorize_path: "/oauth/authenticate"
   api_timeout: 10
   remember_for: 999 # days
-  oauth_callback: "http://tweepromo.heroku.com/oauth_callback"
+  oauth_callback: "http://127.0.0.1/oauth_callback"
 test:
   strategy: oauth
   oauth_consumer_key: testkey
