@@ -1,3 +1,4 @@
 oauth --version 0.4.4
 ezcrypto --version 0.7.2
 json  --version 1.4.6
+rails --version 2.3.5
