@@ -1,0 +1,85 @@
+  [4;36;1mSQL (27.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (26.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2011-01-30 15:36:47) [GET]
+  [4;36;1mSQL (39.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (105.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 342ms (View: 23, DB: 179) | 200 OK [http://localhost/rails/info/properties]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to TwitterAuthMigration (20110130182404)
+  [4;36;1mSQL (273.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `twitter_id` varchar(255), `login` varchar(255), `access_token` varchar(255), `access_secret` varchar(255), `remember_token` varchar(255), `remember_token_expires_at` datetime, `name` varchar(255), `location` varchar(255), `description` varchar(255), `profile_image_url` varchar(255), `url` varchar(255), `protected` tinyint(1), `profile_background_color` varchar(255), `profile_sidebar_fill_color` varchar(255), `profile_link_color` varchar(255), `profile_sidebar_border_color` varchar(255), `profile_text_color` varchar(255), `profile_background_image_url` varchar(255), `profile_background_tile` tinyint(1), `friends_count` int(11), `statuses_count` int(11), `followers_count` int(11), `favourites_count` int(11), `utc_offset` int(11), `time_zone` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110130182404')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (18.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2011-01-30 15:37:41) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 105ms (View: 18, DB: 2) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-01-30 15:37:46) [GET]
+Redirected to https://twitter.com/oauth/authenticate?oauth_token=SBe8qjbtEoDrxdnmZvU77PWonNEHfJgPj1OQeTw3c&oauth_callback=http%3A%2F%2F127.0.0.1%3A3000%2Foauth_callback
+Completed in 6267ms (DB: 1) | 302 Found [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#oauth_callback (for 127.0.0.1 at 2011-01-30 15:38:07) [GET]
+  Parameters: {"oauth_token"=>"SBe8qjbtEoDrxdnmZvU77PWonNEHfJgPj1OQeTw3c", "oauth_verifier"=>"dQwosNh81dCE9wkvm8AC1hAtv8Df6O6MIy31Lrj0So"}
+  [4;36;1mUser Columns (25.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (35.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`twitter_id` = '207776010') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTwitterAuth::GenericUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mTwitterAuth::GenericUser Load (15.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'arakarv') LIMIT 1[0m
+  [4;35;1mTwitterAuth::GenericUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`twitter_id` = BINARY '207776010') LIMIT 1[0m
+  [4;36;1mUser Create (10.0ms)[0m   [0;1mINSERT INTO `users` (`name`, `profile_sidebar_fill_color`, `updated_at`, `profile_link_color`, `profile_sidebar_border_color`, `profile_background_tile`, `access_secret`, `remember_token_expires_at`, `url`, `favourites_count`, `description`, `twitter_id`, `remember_token`, `protected`, `profile_text_color`, `utc_offset`, `access_token`, `profile_background_color`, `time_zone`, `login`, `profile_background_image_url`, `friends_count`, `statuses_count`, `followers_count`, `location`, `profile_image_url`, `created_at`) VALUES('L. Araújo', 'eeebda', '2011-01-30 18:38:10', '625f4c', '80704c', 0, 'bycb3QuQJ6dsUbyS1TZxIAC7RSuznbBps29rousZJI', NULL, NULL, 0, 'Apenas um SOnhador, que sonha mais alto do que pode alcançar', '207776010', NULL, 0, '000000', NULL, '207776010-aWd1SXpQn9J2aaMUzdXSx33qoV8HF7OioQfcsCuL', '6f1f04', NULL, 'AraKarv', 'http://a2.twimg.com/profile_background_images/165373612/2010-10-25_20-03-26_189.31.12.202.jpg', 647, 410, 218, 'Palmas, Tocantins', 'http://a1.twimg.com/profile_images/1152557328/_lightining_normal.jpg', '2011-01-30 18:38:10')[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTwitterAuth::GenericUser Load (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'arakarv' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mTwitterAuth::GenericUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`twitter_id` = BINARY '207776010' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mTwitterAuth::GenericUser Load (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`remember_token` = BINARY '38fcbb671bafb330a5ef' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (43.0ms)[0m   [0;1mUPDATE `users` SET `remember_token_expires_at` = '2013-10-25 18:38:10', `remember_token` = '38fcbb671bafb330a5ef', `updated_at` = '2011-01-30 18:38:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (57.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 4749ms (DB: 226) | 302 Found [http://localhost/oauth_callback?oauth_token=SBe8qjbtEoDrxdnmZvU77PWonNEHfJgPj1OQeTw3c&oauth_verifier=dQwosNh81dCE9wkvm8AC1hAtv8Df6O6MIy31Lrj0So]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m

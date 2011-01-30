@@ -3,7 +3,4 @@ ActionController::Routing::Routes.draw do |map|
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.resource :session
   map.oauth_callback '/oauth_callback', :controller => 'sessions', :action => 'oauth_callback'
-  
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
 end
