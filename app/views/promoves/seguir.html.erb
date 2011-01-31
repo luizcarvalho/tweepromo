@@ -10,7 +10,7 @@
     <tr><td></td><td></td></tr>
     <% @global_result.each_with_index do |results,i| %>
       <tr>
-        <td>Usuario <%=h i+1 %></td>
+        <td>Usuario <%=h @nicks[i] %></td>
         <td></td>
       </tr>
       <% results.each do |login,resposta| %>

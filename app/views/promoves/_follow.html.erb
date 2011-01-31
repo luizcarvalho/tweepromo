@@ -1,0 +1,8 @@
+<h1>Seguir Promotores</h1>
+<% form_tag "/seguir"  do -%>
+  <% (@promoters.nil? ? 5 : @promoters.size ).times do |i| %>
+    <%= text_field_tag "nick[]",(@promoters.nil? ? nil : @promoters[i] ) ,:id=>"nick_#{i}" %>
+    <%= link_to "X","javascript:void(0)",:onclick=>"$('#nick_#{i}').remove();$(this).remove()" %>
+  <% end %>
+  <div><%= submit_tag "Seguir com todos" %></div>
+<% end %>

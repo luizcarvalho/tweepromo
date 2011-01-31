@@ -10,6 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :user
   map.postar "/postar",:controller=>"promoves",:action=>"postar"
   map.seguir "/seguir",:controller=>"promoves",:action=>"seguir"
+  map.promocoes "/promocoes",:controller=>"promoves",:action=>"promocoes"
   
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

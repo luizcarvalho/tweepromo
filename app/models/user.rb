@@ -30,4 +30,12 @@ class User < TwitterAuth::GenericUser
     end
 
 
+  def self.find_promos(user)
+    TwitterAuth.config(environment=RAILS_ENV,"base_url"=>" http://search.twitter.com")
+   searches = user.twitter.get("/search.json?q=kingo")
+   TwitterAuth.config(environment=RAILS_ENV,"base_url"=>nil)
+   searches
+  end
+
+
 end

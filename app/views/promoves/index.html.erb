@@ -8,16 +8,7 @@
     <div><%= submit_tag "Enviar Tweet com todos" %></div>
   <% end %>
 
-  <h1>Seguir Promotores</h1>
-  <% form_tag "/seguir"  do -%>
-    <% 6.times do %>
-      <%= text_field_tag "nick[]" %>
-    <% end %>
-
-
-    <div><%= submit_tag "Seguir com todos" %></div>
-  <% end %>
-
+  <%= render :partial=>"follow" %>
 
 
 </div>

@@ -2640,3 +2640,1790 @@ Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-30 21:47:07) [POS
 Rendering template within layouts/application
 Rendering promoves/seguir
 Completed in 14877ms (View: 8, DB: 13) | 200 OK [http://localhost/seguir]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (171.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (233.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Jan 31 07:52:55 -0300 2011
+  Status: 500 Internal Server Error
+  Expected E:/msysgit/msysgit/projects/tweepromo/app/helpers/promoves_helper.rb to define PromovesHelper
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/msysgit/msysgit/projects/tweepromo/app/controllers/application_controller.rb:5
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Jan 31 07:52:59 -0300 2011
+  Status: 500 Internal Server Error
+  Expected E:/msysgit/msysgit/projects/tweepromo/app/helpers/promoves_helper.rb to define PromovesHelper
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/msysgit/msysgit/projects/tweepromo/app/controllers/application_controller.rb:5
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-01-31 07:53:28) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Columns (154.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (18.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 734ms (View: 557, DB: 172) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 07:53:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 07:54:19) [GET]
+  [4;36;1mUser Columns (35.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 100ms (View: 33, DB: 35) | 200 OK [http://localhost/promoves]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 07:54:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 07:55:08) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (18.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `get_promoters' for #<PromovesController:0x87c1e44>):
+  app/controllers/promoves_controller.rb:10:in `postar'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (127.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 07:58:18) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+
+ActionView::TemplateError (undefined local variable or method `promoter' for #<ActionView::Base:0x887f214>) on line #29 of app/views/promoves/postar.html.erb:
+26: 
+27:   <h1>Seguir Promotores</h1>
+28:   <% form_tag "/seguir"  do -%>
+29:     <% @promoters.each do promoter %>
+30:       <%= text_field_tag "nick[]",promoter %>
+31:     <% end %>
+32:     <div><%= submit_tag "Seguir com todos" %></div>
+
+    app/views/promoves/postar.html.erb:29
+    app/views/promoves/postar.html.erb:29:in `each'
+    app/views/promoves/postar.html.erb:29
+    app/views/promoves/postar.html.erb:28
+    /script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (155.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 07:58:54) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (19.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 73ms (View: 20, DB: 19) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 07:58:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Jan 31 07:59:48 -0300 2011
+  Status: 500 Internal Server Error
+  Expected E:/msysgit/msysgit/projects/tweepromo/app/helpers/promoves_helper.rb to define PromovesHelper
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    E:/msysgit/msysgit/projects/tweepromo/app/controllers/application_controller.rb:5
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:00:16) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 50ms (View: 9, DB: 7) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:00:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:00:32) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 23136ms (View: 16, DB: 11) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:00:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:01:32) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 55378ms (View: 12, DB: 8) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:02:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:03:16) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 91732ms (View: 13, DB: 7) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:05:59) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 53ms (View: 12, DB: 8) | 200 OK [http://localhost/promoves]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:06:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:06:05) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #30 of app/views/promoves/postar.html.erb:
+27:   <h1>Seguir Promotores</h1>
+28:   <% form_tag "/seguir"  do -%>
+29:     <% @promoters.size.times do |i| %>
+30:       <%= text_field_tag "nick[]",@promotes[i] %>
+31:     <% end %>
+32:     <div><%= submit_tag "Seguir com todos" %></div>
+33:   <% end %>
+
+    app/views/promoves/postar.html.erb:30
+    app/views/promoves/postar.html.erb:29:in `times'
+    app/views/promoves/postar.html.erb:29
+    app/views/promoves/postar.html.erb:28
+    /script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (243.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:06:51) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 60ms (View: 20, DB: 7) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:06:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:08:19) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 48ms (View: 8, DB: 8) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:08:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:08:31) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 53ms (View: 12, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:08:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:08:36) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 127ms (View: 8, DB: 9) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:08:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:09:17) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (29.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 83ms (View: 11, DB: 35) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:09:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:09:55) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 145770ms (View: 14, DB: 7) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:12:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:12:28) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 49ms (View: 9, DB: 8) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:12:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:36:47) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf @FDP", "", "", "", ""]}
+  [4;36;1mUser Columns (60.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+ERROR: compiling _run_erb_app47views47promoves47postar46html46erb RAISED compile error
+E:/msysgit/msysgit/projects/tweepromo/app/views/promoves/postar.html.erb:30: syntax error, unexpected ')'
+@output_buffer.concat "      "; @output_buffer.concat(( text_field_tag "nick[]",@promoters[i]* ).to_s); @output_buffer.concat "\n"
+                                                                                                ^
+Function body:           def _run_erb_app47views47promoves47postar46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"text\">\n"
+@output_buffer.concat "  <h1>Tweets enviados</h1>\n"
+@output_buffer.concat "  <br /><br /><br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <table>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <th>Login</th>\n"
+@output_buffer.concat "      <th>Resposta</th>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr><td></td><td></td></tr>\n"
+@output_buffer.concat "    ";  @global_result.each_with_index do |results,i| ; @output_buffer.concat "\n"
+@output_buffer.concat "      <tr>\n"
+@output_buffer.concat "        <td>Mensagem "; @output_buffer.concat((h i+1 ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        <td></td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "      ";  results.each do |login,resposta| ; @output_buffer.concat "\n"
+@output_buffer.concat "      <tr>\n"
+@output_buffer.concat "        <td>"; @output_buffer.concat(( login ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        <td>"; @output_buffer.concat(( resposta ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "      ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  </table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <h1>Seguir Promotores</h1>\n"
+@output_buffer.concat "  ";  form_tag "/seguir"  do 
+@output_buffer.concat "    ";  @promoters.size.times do |i| ; @output_buffer.concat "\n"
+@output_buffer.concat "      "; @output_buffer.concat(( text_field_tag "nick[]",@promoters[i]* ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "    <div>"; @output_buffer.concat(( submit_tag "Seguir com todos" ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: E:/msysgit/msysgit/projects/tweepromo/app/views/promoves/postar.html.erb:39:in `compile!'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/intantrails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script\server:3
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+C:/intantrails/ruby/bin/rdebug-ide:19
+
+ActionView::TemplateError (compile error
+E:/msysgit/msysgit/projects/tweepromo/app/views/promoves/postar.html.erb:30: syntax error, unexpected ')'
+@output_buffer.concat "      "; @output_buffer.concat(( text_field_tag "nick[]",@promoters[i]* ).to_s); @output_buffer.concat "\n"
+                                                                                                ^) on line #30 of app/views/promoves/postar.html.erb:
+27:   <h1>Seguir Promotores</h1>
+28:   <% form_tag "/seguir"  do -%>
+29:     <% @promoters.size.times do |i| %>
+30:       <%= text_field_tag "nick[]",@promoters[i]* %>
+31:     <% end %>
+32:     <div><%= submit_tag "Seguir com todos" %></div>
+33:   <% end %>
+
+    app/views/promoves/postar.html.erb:39:in `compile!'
+    /script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (135.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:37:05) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf @FDP", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 165ms (View: 26, DB: 10) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:37:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:40:50) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["#promo Eu sigo o @trilhacultural e quero ganhar o CD @LeoAzorra #Unplugged. RT e concorra http://kingo.to/rIf @FDP", "", "", "", ""]}
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 65ms (View: 9, DB: 11) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:40:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-31 08:41:07) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@trilhacultural", "@LeoAzorra", "@FDP"], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (13.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 27418ms (View: 22, DB: 19) | 200 OK [http://localhost/seguir]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:41:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:43:53) [GET]
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 52ms (View: 12, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:43:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:44:04) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["@AUTOMAXFIAT, RT essa mensagem e concorra a um Nokia C3 até 31/01/11 http://kingo.to/rBj  #automaxpromo", "", "", "", ""]}
+  [4;35;1mUser Columns (18.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 7714ms (View: 10, DB: 18) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-31 08:44:20) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@AUTOMAXFIAT"], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 4808ms (View: 22, DB: 7) | 200 OK [http://localhost/seguir]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-31 08:44:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jrails.css" with {:method=>:get}):
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:52:39) [GET]
+  [4;35;1mUser Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #4 of app/views/promoves/_follow.html.erb:
+1: <h1>Seguir Promotores</h1>
+2: <% form_tag "/seguir"  do -%>
+3:   <% (@promoters.nil? ? 5 : @promoters.size ).times do |i| %>
+4:     <%= text_field_tag "nick[]",@promoters[i] ,:id=>"nick_#{i}" %>
+5:     <%= link_to "X","javascript:void(0)",:onclick=>"(#nick_#{i}).remove()" %>
+6:   <% end %>
+7:   <div><%= submit_tag "Seguir com todos" %></div>
+
+    app/views/promoves/_follow.html.erb:4
+    app/views/promoves/_follow.html.erb:3:in `times'
+    app/views/promoves/_follow.html.erb:3
+    app/views/promoves/_follow.html.erb:2
+    app/views/promoves/index.html.erb:11
+    /script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (278.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:54:01) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Rendered promoves/_follow (7.0ms)
+Completed in 91ms (View: 51, DB: 6) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:54:58) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Rendered promoves/_follow (8.0ms)
+Completed in 161ms (View: 120, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:55:42) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Rendered promoves/_follow (5.0ms)
+Completed in 70ms (View: 31, DB: 6) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:56:41) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Rendered promoves/_follow (8.0ms)
+Completed in 66ms (View: 25, DB: 6) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-31 08:57:07) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Rendered promoves/_follow (8.0ms)
+Completed in 144ms (View: 105, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 08:58:33) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["Participe, siga, indique, dê RT http://kingo.to/rdc e participe do sorteio de 3 óculos @AlohaEyewear quando chegar aos 5mil seguidores", "", "", "", ""]}
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Rendered promoves/_follow (4.0ms)
+Completed in 6998ms (View: 51, DB: 8) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-31 08:58:45) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@AlohaEyewear"], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 5832ms (View: 7, DB: 8) | 200 OK [http://localhost/seguir]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-01-31 08:59:32) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 44ms (View: 34, DB: 6) | 200 OK [http://localhost/]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-01-31 09:09:19) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 497ms (View: 485, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:09:28) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 304377ms (View: 96, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:27:34) [GET]
+  [4;36;1mUser Columns (131.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (4.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/models/user.rb:34:in `config'
+  app/models/user.rb:34:in `find_promos'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (210.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:28:51) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 65743ms (View: 84, DB: 8) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:30:03) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 377564ms (View: 9, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#promocoes (for 127.0.0.1 at 2011-01-31 09:36:27) [GET]
+
+MissingSourceFile (no such file to load -- open_uri):
+  lib/promote.rb:2
+  app/controllers/promoves_controller.rb:2
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:38:29) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+Errno::EINVAL (Invalid argument - http://search.twitter.com/search.format?q=kingo):
+  lib/promote.rb:13:in `initialize'
+  lib/promote.rb:13:in `open'
+  lib/promote.rb:13:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:44:41) [GET]
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+NoMethodError (private method `open' called for URI::HTTP:Class):
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:46:38) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+NoMethodError (undefined method `read' for #<URI::HTTP:0x861dfd4>):
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:46:48) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+TypeError (can't convert URI::HTTP into String):
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/json-1.4.6-x86-mswin32/lib/json/common.rb:146:in `initialize'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/json-1.4.6-x86-mswin32/lib/json/common.rb:146:in `new'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/json-1.4.6-x86-mswin32/lib/json/common.rb:146:in `parse'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:47:20) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 346560ms (View: 8, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:53:07) [GET]
+  [4;36;1mUser Columns (53.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+OpenURI::HTTPError (406 Not Acceptable):
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:519:in `open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (137.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:53:12) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+OpenURI::HTTPError (406 Not Acceptable):
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:519:in `open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:53:23) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+OpenURI::HTTPError (406 Not Acceptable):
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:519:in `open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:53:46) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+OpenURI::HTTPError (406 Not Acceptable):
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:519:in `open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (217.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 09:55:27) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+OpenURI::HTTPError (406 Not Acceptable):
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:519:in `open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#promocoes (for 127.0.0.1 at 2011-01-31 09:58:54) [GET]
+
+MissingSourceFile (no such file to load -- open_uri):
+  lib/promote.rb:1
+  app/controllers/promoves_controller.rb:2
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (231.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:00:12) [GET]
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+OpenSSL::SSL::SSLError (certificate verify failed):
+  C:/intantrails/ruby/lib/ruby/1.8/net/http.rb:590:in `connect'
+  C:/intantrails/ruby/lib/ruby/1.8/net/http.rb:590:in `connect'
+  C:/intantrails/ruby/lib/ruby/1.8/net/http.rb:557:in `do_start'
+  C:/intantrails/ruby/lib/ruby/1.8/net/http.rb:546:in `start'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:243:in `open_http'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:519:in `open'
+  C:/intantrails/ruby/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/promote.rb:14:in `twitter_search'
+  app/controllers/promoves_controller.rb:29:in `promocoes'
+  /script\server:3
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+  C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+  C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+  C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (138.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:02:04) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 290092ms (View: 67, DB: 9) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:17:34) [GET]
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+
+ActionView::TemplateError (undefined method `text' for #<Hash:0x863b110>) on line #92 of app/views/promoves/promocoes.html.erb:
+89: 
+90:     <tbody>
+91:       <% @searches.each_with_index do |tweet,i| %>
+92:         <td><%= tweet.text %></td>
+93:         <td><%= link_to "Participar","javascript:void(0)" %></td>
+94:       <% end %>
+95:     </tbody>
+
+    app/views/promoves/promocoes.html.erb:92
+    app/views/promoves/promocoes.html.erb:91:in `each'
+    app/views/promoves/promocoes.html.erb:91:in `each_with_index'
+    app/views/promoves/promocoes.html.erb:91
+    /script\server:3
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_load'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/lib/ruby-debug.rb:101:in `debug_program'
+    C:/intantrails/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.5/bin/rdebug-ide:82
+    C:/intantrails/ruby/bin/rdebug-ide:19:in `load'
+    C:/intantrails/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (194.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:18:07) [GET]
+  [4;36;1mUser Columns (54.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1558ms (View: 147, DB: 54) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:19:04) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1316ms (View: 37, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:19:55) [GET]
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1700ms (View: 51, DB: 12) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:21:05) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1538ms (View: 132, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:21:39) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1355ms (View: 35, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:22:54) [GET]
+  [4;36;1mUser Columns (138.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1513ms (View: 36, DB: 139) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:23:26) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1685ms (View: 33, DB: 8) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:23:51) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1302ms (View: 35, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:24:46) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1330ms (View: 36, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:25:47) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1323ms (View: 34, DB: 10) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:26:07) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1117ms (View: 32, DB: 7) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:27:07) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1385ms (View: 112, DB: 10) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:27:42) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1641ms (View: 34, DB: 8) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:28:19) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1361ms (View: 36, DB: 9) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:28:49) [GET]
+  [4;36;1mUser Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1521ms (View: 29, DB: 13) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:29:06) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1379ms (View: 35, DB: 8) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:30:06) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1379ms (View: 33, DB: 9) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:30:23) [GET]
+  [4;36;1mUser Columns (29.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 2873ms (View: 33, DB: 30) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#promocoes (for 127.0.0.1 at 2011-01-31 10:40:40) [GET]
+  [4;36;1mUser Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/promocoes
+Completed in 1395ms (View: 44, DB: 9) | 200 OK [http://localhost/promocoes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-31 10:40:50) [GET]
+  Parameters: {"tweet"=>["RT @alicedisse: Então retuíta: ♣♣♣ Quero \"It Girls\" de Ale Garattoni   Chanel Rouge Noir q @alicedisse vai dar: http://kingo.to/s7Z ♣♣♣)"]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (7.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Rendered promoves/_follow (6.0ms)
+Completed in 7408ms (View: 136, DB: 14) | 200 OK [http://localhost/postar?tweet[]=RT%20@alicedisse:%20Ent%C3%A3o%20retu%C3%ADta:%20%E2%99%A3%E2%99%A3%E2%99%A3%20Quero%20%22It%20Girls%22%20de%20Ale%20Garattoni%20+%20Chanel%20Rouge%20Noir%20q%20@alicedisse%20vai%20dar:%20http://kingo.to/s7Z%20%E2%99%A3%E2%99%A3%E2%99%A3)]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-31 10:41:11) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@alicedisse"], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 6719ms (View: 22, DB: 10) | 200 OK [http://localhost/seguir]
