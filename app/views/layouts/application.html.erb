@@ -20,7 +20,6 @@ which means you can use it in any way you want provided you keep the link to the
       <div id="menu">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/login">Login</a></li>
           <li><a href="/promocoes">Promoções</a></li>
           <li><a href="/promoves">Promoves</a></li>
           <li><a href="/users">Usuarios</a></li>
@@ -34,13 +33,16 @@ which means you can use it in any way you want provided you keep the link to the
       <div id="content">
         <div id="sidebar">
           <div id="sidebar_top"></div>
-          <% if logged_in?  %>
-          <div id="sidebar_text">
-            <p><%= image_tag current_user.profile_image_url %></p>
-            <h2><%= link_to current_user.login,"http://twitter.com/#{current_user.login}" %></h2>
 
+          <div id="sidebar_text">
+            <% if logged_in?  %>
+              <p><%= image_tag current_user.profile_image_url %></p>
+              <h2><%= link_to current_user.login,"http://twitter.com/#{current_user.login}" %></h2>
+              <% else %>
+                <%= link_to image_tag("login.png",:border=>"0"),login_path,:alt=>"A Curiosidade matou o gato" %>
+            <% end %>
           </div>
-          <% end %>
+
 
           <div id="sidebar_bottom"></div>
         </div>
