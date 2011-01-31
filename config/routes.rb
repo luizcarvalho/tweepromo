@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   map.oauth_callback '/oauth_callback', :controller => 'sessions', :action => 'oauth_callback'
 
+  map.resource :user
   map.postar "/postar",:controller=>"promoves",:action=>"postar"
   map.seguir "/seguir",:controller=>"promoves",:action=>"seguir"
   

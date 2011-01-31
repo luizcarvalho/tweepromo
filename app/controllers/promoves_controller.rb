@@ -4,19 +4,24 @@ class PromovesController < ApplicationController
   end
 
   def postar
+    @global_result = []
     tweets = params["tweet"]
     tweets.delete("")
     tweets.each do |tweet|
-      @result = User.tweet_this(tweet)
+      @global_result.push(User.tweet_this(tweet))
     end
   end
 
 
   def seguir
+    @global_result = []
     nicks = params["nick"]
     nicks.delete("")
      nicks.each do |nick|
-      @result = User.follow_him(nick)
+      @global_result.push(@result = User.follow_him(nick))
     end
   end
+
+
+  
 end

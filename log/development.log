@@ -2285,3 +2285,358 @@ Processing SessionsController#home (for 127.0.0.1 at 2011-01-30 21:07:47) [GET]
 Rendering template within layouts/application
 Rendering sessions/home
 Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-01-30 21:30:36) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+Completed in 161ms (View: 158, DB: 48) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-01-30 21:31:03) [GET]
+Redirected to https://twitter.com/oauth/authenticate?oauth_token=YU3sKbE2OSsaJhzRqSK0PMYrYjPrFUYptyRwr9mEc&oauth_callback=http%3A%2F%2F127.0.0.1%2Foauth_callback
+Completed in 6604ms (DB: 0) | 302 Found [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#oauth_callback (for 127.0.0.1 at 2011-01-30 21:31:12) [GET]
+  Parameters: {"oauth_token"=>"YU3sKbE2OSsaJhzRqSK0PMYrYjPrFUYptyRwr9mEc", "oauth_verifier"=>"p1XQdfjhIPPLm2d3vls16rTQdCdRt3ggs9K7AxSoijU"}
+  [4;36;1mUser Columns (262.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (28.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`twitter_id` = '207776010') LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTwitterAuth::GenericUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mTwitterAuth::GenericUser Load (32.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'arakarv' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mTwitterAuth::GenericUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`twitter_id` = BINARY '207776010' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mTwitterAuth::GenericUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`remember_token` = BINARY '9b131b1c475a4c3f4804' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Update (60.0ms)[0m   [0mUPDATE `users` SET `followers_count` = 219, `statuses_count` = 417, `friends_count` = 650, `updated_at` = '2011-01-31 00:31:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (61.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTwitterAuth::GenericUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'arakarv' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mTwitterAuth::GenericUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`twitter_id` = BINARY '207776010' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mTwitterAuth::GenericUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`remember_token` = BINARY '8a6dc5d714602fb8eda2' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Update (1.0ms)[0m   [0mUPDATE `users` SET `remember_token_expires_at` = '2013-10-26 00:31:17', `remember_token` = '8a6dc5d714602fb8eda2', `updated_at` = '2011-01-31 00:31:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (37.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 5422ms (DB: 490) | 302 Found [http://localhost/oauth_callback?oauth_token=YU3sKbE2OSsaJhzRqSK0PMYrYjPrFUYptyRwr9mEc&oauth_verifier=p1XQdfjhIPPLm2d3vls16rTQdCdRt3ggs9K7AxSoijU]
+  [4;35;1mSQL (8.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-01-30 21:31:19) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (9.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 45ms (View: 26, DB: 24) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-30 21:31:24) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 76ms (View: 42, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-01-30 21:31:43) [GET]
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 76ms (View: 37, DB: 9) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-30 21:31:49) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 42ms (View: 10, DB: 8) | 200 OK [http://localhost/promoves]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-30 21:33:42) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["Eu quero ganhar o colar de óculos Isabel Boiteux e o bolero Verve do sorteio de aniversário do @_starving_! http://kingo.to/s6s", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+
+ActionView::TemplateError (undefined method `each' for 0:Fixnum) on line #16 of app/views/promoves/postar.html.erb:
+13:         <td>Mensagem <%=h i %></td>
+14:         <td></td>
+15:       </tr>
+16:       <% results.each do |login,resposta| %>
+17:       <tr>
+18:         <td><%= login %></td>
+19:         <td><%= resposta %></td>
+
+    app/views/promoves/postar.html.erb:16
+    app/views/promoves/postar.html.erb:11:in `each'
+    app/views/promoves/postar.html.erb:11:in `each_with_index'
+    app/views/promoves/postar.html.erb:11
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-01-30 21:34:54) [GET]
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 55ms (View: 17, DB: 8) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2011-01-30 21:34:58) [DELETE]
+  Parameters: {"authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "id"=>"4"}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to destroy. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2011-01-30 21:36:45) [DELETE]
+  Parameters: {"authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "id"=>"4"}
+  [4;36;1mUser Columns (23.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to destroy. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-01-30 21:37:04) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 109ms (View: 73, DB: 9) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2011-01-30 21:38:18) [DELETE]
+  Parameters: {"authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "id"=>"4"}
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to destroy. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2011-01-30 21:38:46) [DELETE]
+  Parameters: {"authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "id"=>"4"}
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+NameError (uninitialized constant UsersController::Usuario):
+  app/controllers/users_controller.rb:17:in `destroy'
+
+Rendered rescues/_trace (165.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2011-01-30 21:39:17) [DELETE]
+  Parameters: {"authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "id"=>"4"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Destroy (14.0ms)[0m   [0mDELETE FROM `users` WHERE `id` = 4[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCOMMIT[0m
+
+NameError (undefined local variable or method `usuarios_url' for #<UsersController:0x7d52e7c>):
+  app/controllers/users_controller.rb:21:in `destroy'
+  app/controllers/users_controller.rb:20:in `destroy'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-01-30 21:39:31) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 51ms (View: 15, DB: 8) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-30 21:40:25) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 162ms (View: 46, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-30 21:40:43) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["Todos prontos para a noite do Poker Felino?", "", "", "", ""]}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 14876ms (View: 45, DB: 8) | 200 OK [http://localhost/postar]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-01-30 21:42:20) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 430ms (View: 416, DB: 11) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-30 21:42:25) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["Pronto como nunca meu amigo!", "", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 79105ms (View: 63348, DB: 7) | 200 OK [http://localhost/postar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-30 21:43:50) [GET]
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 128ms (View: 23, DB: 8) | 200 OK [http://localhost/promoves]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-30 21:44:02) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["UAISHDiUAHSDASD Adoro essa tira. =)", "", "", "", ""]}
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 7468ms (View: 7, DB: 8) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#postar (for 127.0.0.1 at 2011-01-30 21:44:48) [POST]
+  Parameters: {"commit"=>"Enviar Tweet com todos", "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8=", "tweet"=>["Sabem onde vê lá?", "Só entrar no site do não intendo. www.naointendo.com.br =)", "", "", ""]}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/postar
+Completed in 12883ms (View: 7, DB: 8) | 200 OK [http://localhost/postar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#index (for 127.0.0.1 at 2011-01-30 21:45:48) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering promoves/index
+Completed in 50ms (View: 12, DB: 7) | 200 OK [http://localhost/promoves]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-30 21:46:00) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@xauxaverde", "", "", "", "", ""], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 11032ms (View: 111, DB: 9) | 200 OK [http://localhost/seguir]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-30 21:46:22) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@xuxaverde", "", "", "", "", ""], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 6031ms (View: 6, DB: 8) | 200 OK [http://localhost/seguir]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-30 21:46:35) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@xuxaverde", "", "", "", "", ""], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 5086ms (View: 6, DB: 8) | 200 OK [http://localhost/seguir]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromovesController#seguir (for 127.0.0.1 at 2011-01-30 21:47:07) [POST]
+  Parameters: {"commit"=>"Seguir com todos", "nick"=>["@Fayadin", "", "", "", "", ""], "authenticity_token"=>"I8gwXtu9WommPs+837bN5cTY/+MOmijnUOKvbcWjks8="}
+  [4;35;1mUser Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering promoves/seguir
+Completed in 14877ms (View: 8, DB: 13) | 200 OK [http://localhost/seguir]

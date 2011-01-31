@@ -44,7 +44,7 @@ module TwitterAuth
     end
 
     def admin_required
-      (authorized? && current_user.login == "LuizCarvalho") || (redirect_to root_path)
+      (authorized? && current_user.login == "AraKarv") || (redirect_to root_path)
     end
 
     def access_denied

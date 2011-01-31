@@ -12,6 +12,7 @@ class User < TwitterAuth::GenericUser
           result.store(user.login,"ERRO: #{e.message}")
         end
       end
+      result
     end
 
 
@@ -25,6 +26,7 @@ class User < TwitterAuth::GenericUser
           result.store(user.login,"ERRO: #{e.message}")
         end
       end
+      result
     end
 
 
