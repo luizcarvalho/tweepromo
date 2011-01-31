@@ -7,9 +7,9 @@ class User < TwitterAuth::GenericUser
       User.all.each do |user|
         begin
           user.twitter.post('/statuses/update.json', 'status' =>tweet)
-          result.store(user.login,true)
-        #rescue
-          result.store(user.login,false)
+          result.store(user.login,"Enviado")
+        rescue Exception => e
+          result.store(user.login,"ERRO: #{e.message}")
         end
       end
     end
@@ -20,9 +20,9 @@ class User < TwitterAuth::GenericUser
       User.all.each do |user|
         begin
           user.twitter.post("/friendships/create/#{nick}.json")
-          result.store(user.login,true)
-        rescue
-          result.store(user.login,false)
+          result.store(user.login,"Seguindo")
+        rescue Exception => e
+          result.store(user.login,"ERRO: #{e.message}")
         end
       end
     end

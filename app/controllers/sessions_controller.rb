@@ -22,17 +22,17 @@ class SessionsController < ApplicationController
       self.current_user = user
       authentication_succeeded and return
     else
-      authentication_failed('Unable to verify your credentials through Twitter. Please try again.', '/login') and return
+      authentication_failed('Não conseguimos lhe autenticar pelo Twitter, por favor tente de novo.', '/login') and return
     end
   end
 
   def oauth_callback
     unless session[:request_token] && session[:request_token_secret] 
-      authentication_failed('No authentication information was found in the session. Please try again.') and return
+      authentication_failed('Sem informações sobre qualquer autenticação nessa sessão. por favor tente de novo.') and return
     end
 
    unless params[:oauth_token].blank? || session[:request_token] ==  params[:oauth_token]
-     authentication_failed('Authentication information does not match session information. Please try again.') and return
+     authentication_failed('Informação de autenticação não é igual a atual. Por favor tente de novo') and return
    end
 
     @request_token = OAuth::RequestToken.new(TwitterAuth.consumer, session[:request_token], session[:request_token_secret])
@@ -55,9 +55,9 @@ class SessionsController < ApplicationController
   rescue Net::HTTPServerException => e
     case e.message
       when '401 "Unauthorized"'
-        authentication_failed('This authentication request is no longer valid. Please try again.') and return
+        authentication_failed('Sua autenticação perdeu a validade. Por favor tente de novo') and return
       else
-        authentication_failed('There was a problem trying to authenticate you. Please try again.') and return
+        authentication_failed('Encontramos um problema em autenticar você. tende de novo.') and return
     end 
   end
   

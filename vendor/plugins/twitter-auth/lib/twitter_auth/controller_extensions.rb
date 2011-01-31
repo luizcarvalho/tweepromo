@@ -14,7 +14,7 @@ module TwitterAuth
       redirect_to destination
     end
 
-    def authentication_succeeded(message = 'You have logged in successfully.', destination = '/')
+    def authentication_succeeded(message = 'Autenticação bem sucedida.', destination = '/')
       flash[:notice] = message
       redirect_back_or_default destination
     end
@@ -41,6 +41,10 @@ module TwitterAuth
 
     def login_required
       authorized? || access_denied 
+    end
+
+    def admin_required
+      (authorized? && current_user.login == "LuizCarvalho") || (redirect_to root_path)
     end
 
     def access_denied

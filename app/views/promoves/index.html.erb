@@ -1,20 +1,23 @@
-<% form_tag "/postar"  do -%>
-  <div><%= text_area_tag "tweet[]","",:cols=>70 %></div>
-  <div><%= text_area_tag "tweet[]","",:cols=>70 %></div>
-  <div><%= text_area_tag "tweet[]","",:cols=>70 %></div>
-  <div><%= text_area_tag "tweet[]","",:cols=>70 %></div>
-  <div><%= text_area_tag "tweet[]","",:cols=>70 %></div>
+<div id="text">
+  <h1>Enviar Tweets</h1>
 
-  <div><%= submit_tag "Enviar Tweet com todos" %></div>
-<% end %>
+  <% form_tag "/postar"  do -%>
+    <% 5.times do %>
+      <div><%= text_area_tag "tweet[]","",:cols=>50 %></div>
+    <% end %>
+    <div><%= submit_tag "Enviar Tweet com todos" %></div>
+  <% end %>
+
+  <h1>Seguir Promotores</h1>
+  <% form_tag "/seguir"  do -%>
+    <% 6.times do %>
+      <%= text_field_tag "nick[]" %>
+    <% end %>
 
 
-<% form_tag "/seguir"  do -%>
-  <%= text_field_tag "nick[]" %>
-  <%= text_field_tag "nick[]" %>
-  <%= text_field_tag "nick[]" %>
-  <%= text_field_tag "nick[]" %>
-  <%= text_field_tag "nick[]" %>
+    <div><%= submit_tag "Seguir com todos" %></div>
+  <% end %>
 
-  <div><%= submit_tag "Seguir com todos" %></div>
-<% end %>
+
+
+</div>
