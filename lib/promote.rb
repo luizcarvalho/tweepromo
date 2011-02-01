@@ -11,7 +11,11 @@ module Promote
 
 
 def twitter_search(query)
-  JSON.parse(open("http://search.twitter.com/search.json?q=#{CGI.escape(query)}").read)
+  begin
+    JSON.parse(open("http://search.twitter.com/search.json?q=#{CGI.escape(query)}").read)
+  rescue
+    JSON.parse(open("https://search.twitter.com/search.json?q=#{CGI.escape(query)}").read)
+  end
 end
 
   
