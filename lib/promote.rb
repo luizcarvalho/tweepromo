@@ -1,10 +1,10 @@
 require "open-uri"
 module Promote
-  def get_promoters(tweets)
+  def get_promoters(tweet)
     captures = []
-    tweets.each do |tweet|
-      captures = tweet.scan(/(@[a-zA-Z]+)/)
-    end
+    #tweets.each do |tweet|
+      captures = tweet.scan(/(@\S+)/)
+    #end
     captures
   end
 

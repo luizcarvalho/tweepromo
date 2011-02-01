@@ -22,7 +22,7 @@
     <% end %>
   </table>
   <br />
-  <%= link_to "CONTINUAR","/postar?tweet[]=#{tweet['text']}&count=#{@count+5}" %>
+  <%= link_to "CONTINUAR","/postar?tweet[]=#{@tweet}&count=#{@count+5}" %>
   <br />
 
   <%= render :partial=>"follow" %>

@@ -6,13 +6,13 @@ class PromovesController < ApplicationController
 
   def postar
     @global_result = []
-    @tweets = params["tweet"]
-    @count = params["count"]
-    @tweets.delete("")
-    @promoters = get_promoters(@tweets)
-    @tweets.each do |tweet|
-      @global_result.push(User.tweet_this(tweet,count))
-    end
+    @tweet = params["tweet"]
+    @count = (params["count"] || 0).to_i
+    #@tweets.delete("")
+    @promoters = get_promoters(@tweet)
+    #@tweets.each do |tweet|
+      @global_result.push(User.tweet_this(@tweet,@count))
+    #end
   end
 
 
