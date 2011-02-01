@@ -5282,3 +5282,22 @@ Processing PromovesController#seguir (for 127.0.0.1 at 2011-02-01 11:04:15) [POS
 Rendering template within layouts/application
 Rendering promoves/seguir
 Completed in 7080ms (View: 67, DB: 8) | 200 OK [http://localhost/seguir]
+** TwitterAuth initialized properly.
+  [4;36;1mSQL (52.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2011-02-01 13:21:54) [GET]
+Rendering template within layouts/application
+Rendering sessions/home
+Completed in 47ms (View: 43, DB: 53) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-01 13:21:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/li.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
