@@ -8,9 +8,9 @@ class PromovesController < ApplicationController
     @global_result = []
     @tweets = params["tweet"]
     @count = params["count"]
-    tweets.delete("")
-    @promoters = get_promoters(tweets)
-    tweets.each do |tweet|
+    @tweets.delete("")
+    @promoters = get_promoters(@tweets)
+    @tweets.each do |tweet|
       @global_result.push(User.tweet_this(tweet,count))
     end
   end
