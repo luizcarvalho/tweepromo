@@ -96,7 +96,7 @@
       <% @searches.each_with_index do |tweet,i| %>
       <tr>
       <td><%= tweet["text"] %></td>
-      <td><%= link_to "Participar","/postar?tweet[]=#{tweet['text']})" %></td>
+      <td><%= link_to "Participar","/postar?tweet[]=#{tweet['text']}&count=0" %></td>
       </tr>
     <% end %>
     </tbody>

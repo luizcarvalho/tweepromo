@@ -10,7 +10,7 @@
     <tr><td></td><td></td></tr>
     <% @global_result.each_with_index do |results,i| %>
       <tr>
-        <td>Mensagem <%=h i+1 %></td>
+        <td><b>PARA:</b> <%= @tweet  %></td>
         <td></td>
       </tr>
       <% results.each do |login,resposta| %>
@@ -21,7 +21,8 @@
       <% end %>
     <% end %>
   </table>
-
+  <br />
+  <%= link_to "CONTINUAR","/postar?tweet[]=#{tweet['text']}&count=#{@count+5}" %>
   <br />
 
   <%= render :partial=>"follow" %>
