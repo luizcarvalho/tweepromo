@@ -2,9 +2,9 @@ class User < TwitterAuth::GenericUser
   # Extend and define your user model as you see fit.
   # All of the authentication logic is handled by the 
   # parent TwitterAuth::GenericUser class.
-    def self.tweet_this(tweet)
+    def self.tweet_this(tweet,offset)
       result = {}
-      User.all.each do |user|
+      User.find(:all,:offset=>offset,:limit=>5).each do |user|
         begin
           user.twitter.post('/statuses/update.json', 'status' =>tweet)
           result.store(user.login,"Enviado")
