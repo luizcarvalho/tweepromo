@@ -1,0 +1,31 @@
+<div class="text">
+  <h1>Tweets enviados</h1>
+  <br /><br /><br />
+
+  <table>
+    <tr>
+      <th>Login</th>
+      <th>Resposta</th>
+    </tr>
+    <tr><td></td><td></td></tr>
+    <% @global_result.each_with_index do |results,i| %>
+      <tr>
+        <td><b>PARA:</b> <%= @tweet  %></td>
+        <td></td>
+      </tr>
+      <% results.each do |login,resposta| %>
+      <tr>
+        <td><%= login %></td>
+        <td><%= resposta %></td>
+      </tr>
+      <% end %>
+    <% end %>
+  </table>
+  <br />
+  <%= link_to "CONTINUAR","/postar?count=#{@count+5}&tweet=#{@tweet}" %>
+  <br />
+
+  <%= render :partial=>"follow" %>
+
+
+</div>

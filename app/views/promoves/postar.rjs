@@ -1,0 +1,7 @@
+result_tag = ""
+result = User.tweet_this(@tweet,@count)
+result.each_pair { |key,value| result_tag<<"<li>#{key}  -  #{value}</li>" }
+page.insert_html :bottom, :result_list, result_tag
+page.insert_html :bottom, :result_list, "<li>---------------------------</li>"
+
+
