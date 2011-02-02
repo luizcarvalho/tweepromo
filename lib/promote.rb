@@ -3,7 +3,7 @@ module Promote
   def get_promoters(tweet)
     captures = []
     #tweets.each do |tweet|
-      captures = tweet.scan(/(@\S+)/)
+      captures = tweet.scan(/@(\S+)/)
     #end
     captures
   end

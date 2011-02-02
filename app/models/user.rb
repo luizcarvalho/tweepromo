@@ -16,9 +16,9 @@ class User < TwitterAuth::GenericUser
     end
 
 
-    def self.follow_him(nick)
+    def self.follow_him(nick,offset)
       result = {}
-      User.all.each do |user|
+      User.find(:all,:offset=>offset,:limit=>5).each do |user|
         begin
           user.twitter.post("/friendships/create/#{nick}.json")
           result.store(user.login,"Seguindo")

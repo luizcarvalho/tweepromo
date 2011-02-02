@@ -1,8 +1,20 @@
 <%= javascript_include_tag "jquery.ba-jqmq.js"  %>
+<%= javascript_include_tag "jquery.progressbar.min.js"  %>
+
 
 <script type="text/javascript">
+  var action="/postar";
+  var followin = "";
+
+  function seguir_action(promotor){
+    action="/seguir";
+    followin = promotor;
+    postar();
+  };
+
 
   function postar(){
+
     $(function(){
       // Create a new queue.
       window.queue = $.jqmq({
@@ -13,18 +25,26 @@
         // For each queue item, execute this function, making an AJAX request. Only
         // continue processing the queue once the AJAX request's callback executes.
         callback: function( item ) {
-          $('#result_list').append("<li>"+item+"</li>");
-          // Make a JSON request. The response will return a success boolean as well
-          // as some HTML.
-          $.post( "/postar?count="+item+"&tweet=<%= @tweet %>", function(data){
+          
+          progress(item);
+
+          if (action == "/postar"){
+            var action_url = "/postar?count="+item+"&tweet=<%= @tweet %>";
+          }
+          else {
+            var action_url = "/seguir?count="+item+"&nick="+followin;
+          }
+          $.post( action_url, function(data){
 
             $('#result_list').append(data);
             // If the request was unsuccessful, make another attempt.
             if(data!="done"){
               queue.next();
+            }
+            else {
+              progress(<%= @max %>);
+              queue.clear();
             };
-
-
           });
         },
         // When the queue completes naturally, execute this function.
@@ -36,10 +56,10 @@
       $.ajaxSetup({ cache: false });
 
       queue.add(<%= count=0 %>);
-<% while count<=@max do %>
-    <% count+=5 %>
+      <% while count<=@max do %>
+      <% count+=5 %>
           queue.add(<%= count %>);
-  <% end %>
+      <% end %>
         queue.start();
       });
     };
@@ -52,6 +72,12 @@
       $("#atualizar_button").attr("href","/promoves?count=0&tweet="+newtweet);
     };
 
+
+function progress(quant){
+  var total=<%= @max %>;
+  var percentage = Math.floor(100 * parseInt(quant) / parseInt(total));
+  $('#progressbar').progressBar(percentage);
+};
   </script>
 
 
@@ -62,11 +88,20 @@
 
     <fieldset>
       <legend>Tweet</legend>
-      <%= text_area_tag "tweet", @tweet,:id=>"tweet",:cols=>70,:onKeyPress=>"atualizar_tweet()" %>
+      <%= text_area_tag "tweet", @tweet,:id=>"tweet",:cols=>70,:onKeyUp=>"atualizar_tweet()" %>
     </fieldset>
+    <table border="0" cellspacing="0">
+      <tr>
+        <td>
+          <%= link_to "Enviar","javascript:void(0)",:onclick=>"postar()",:class=>"button",:id=>"enviar_button" %>
+          <%= link_to "Atualizar","/promoves?count=#{@count}&tweet=#{@tweet}",:class=>"button",:id=>"atualizar_button",:style=>"display:none;" %>
+        </td>
+        <td>
+          <div id="progressbar" style="padding: 30px;"></div>
+        </td>
+      </tr>
+    </table>
 
-    <%= link_to "Enviar","javascript:void(0)",:onclick=>"postar()",:class=>"button",:id=>"enviar_button" %>
-    <%= link_to "Atualizar","/promoves?count=#{@count}&tweet=#{@tweet}",:class=>"button",:id=>"atualizar_button",:style=>"display:none;" %>
     <fieldset>
       <legend>Resultado</legend>
       <ul id="result_list" >
@@ -74,10 +109,4 @@
       </ul>
     </fieldset>
     <%= render :partial=>"follow",:locals=>{:promoters=>@promoters} %>
-
-    <div id="output">
-
-    </div>
-
-
   </div>
