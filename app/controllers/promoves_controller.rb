@@ -2,17 +2,28 @@ class PromovesController < ApplicationController
   include Promote
  before_filter :admin_required
   def index
+    @tweet = params["tweet"]
+    @promoters = get_promoters(@tweet)
+    @count = params["count"]
+    @max = User.count
   end
 
   def postar
-    @global_result = []
+    
     @tweet = params["tweet"]
     @count = (params["count"] || 0).to_i
-    #@tweets.delete("")
-    @promoters = get_promoters(@tweet)
-    #@tweets.each do |tweet|
-      @global_result.push(User.tweet_this(@tweet,@count))
-    #end
+    #@promoters = get_promoters(@tweet)
+    @max = User.count
+    result = User.tweet_this(@tweet, @count)
+    result_tag = result.collect { |nick,r| "<li>#{nick} - #{r}</li>"  }
+    
+    
+    respond_to do |format|
+      format.html {render :text=>(@count>@max) ? "done" : result_tag.to_s ,:layout=>false}
+      format.json
+      format.js
+    end
+    
   end
 
 

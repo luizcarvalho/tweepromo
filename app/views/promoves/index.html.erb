@@ -1,14 +1,83 @@
-<div id="text">
-  <h1>Enviar Tweets</h1>
+<%= javascript_include_tag "jquery.ba-jqmq.js"  %>
 
-  <% form_tag "/postar"  do -%>
-    <% 5.times do %>
-      <div><%= text_area_tag "tweet[]","",:cols=>50 %></div>
-    <% end %>
-    <div><%= submit_tag "Enviar Tweet com todos" %></div>
+<script type="text/javascript">
+
+  function postar(){
+    $(function(){
+      // Create a new queue.
+      window.queue = $.jqmq({
+        // Next item will be processed only when queue.next() is called in callback.
+        delay: -1,
+        // Process queue items one-at-a-time.
+        batch: 1,
+        // For each queue item, execute this function, making an AJAX request. Only
+        // continue processing the queue once the AJAX request's callback executes.
+        callback: function( item ) {
+          $('#result_list').append("<li>"+item+"</li>");
+          // Make a JSON request. The response will return a success boolean as well
+          // as some HTML.
+          $.post( "/postar?count="+item+"&tweet=<%= @tweet %>", function(data){
+
+            $('#result_list').append(data);
+            // If the request was unsuccessful, make another attempt.
+            if(data!="done"){
+              queue.next();
+            };
+
+
+          });
+        },
+        // When the queue completes naturally, execute this function.
+        complete: function(){
+          $('#result_list').append( '<span class="done">COMPLETO<\/span>' );
+        }
+      });
+      // Disable AJAX caching.
+      $.ajaxSetup({ cache: false });
+
+      queue.add(<%= count=0 %>);
+<% while count<=@max do %>
+    <% count+=5 %>
+          queue.add(<%= count %>);
   <% end %>
+        queue.start();
+      });
+    };
 
-  <%= render :partial=>"follow" %>
+
+    function atualizar_tweet(){
+      $("#enviar_button").hide();
+      $("#atualizar_button").show();
+      var newtweet = $("#tweet").val();
+      $("#atualizar_button").attr("href","/promoves?count=0&tweet="+newtweet);
+    };
+
+  </script>
 
 
-</div>
+
+
+  <div id="text">
+    <h1>Enviar Tweets</h1>
+
+    <fieldset>
+      <legend>Tweet</legend>
+      <%= text_area_tag "tweet", @tweet,:id=>"tweet",:cols=>70,:onKeyPress=>"atualizar_tweet()" %>
+    </fieldset>
+
+    <%= link_to "Enviar","javascript:void(0)",:onclick=>"postar()",:class=>"button",:id=>"enviar_button" %>
+    <%= link_to "Atualizar","/promoves?count=#{@count}&tweet=#{@tweet}",:class=>"button",:id=>"atualizar_button",:style=>"display:none;" %>
+    <fieldset>
+      <legend>Resultado</legend>
+      <ul id="result_list" >
+
+      </ul>
+    </fieldset>
+    <%= render :partial=>"follow",:locals=>{:promoters=>@promoters} %>
+
+    <div id="output">
+
+    </div>
+
+
+  </div>
