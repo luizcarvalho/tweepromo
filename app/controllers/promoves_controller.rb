@@ -3,6 +3,7 @@ class PromovesController < ApplicationController
  before_filter :admin_required
   def index
     @tweet = params["tweet"]
+    @tweeturl = @tweet
     @nick = params["nick"]
     @promoters = get_promoters(@tweet) if @tweet
     @count = params["count"]

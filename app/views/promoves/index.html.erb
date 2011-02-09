@@ -69,7 +69,7 @@
       $("#enviar_button").hide();
       $("#atualizar_button").show();
       var newtweet = $("#tweet").val();
-      $("#atualizar_button").attr("href","/promoves?count=0&tweet="+newtweet);
+      $("#atualizar_button").attr("href","/promoves?count=0&tweet="+encodeURI(newtweet));
     };
 
 
