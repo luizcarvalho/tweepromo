@@ -21,12 +21,28 @@ class User < TwitterAuth::GenericUser
       User.find(:all,:offset=>offset,:limit=>5).each do |user|
         begin
           user.twitter.post("/friendships/create/#{nick}.json")
-          result.store(user.login,"Seguindo")
+          result.store(user.login,"Seguindo #{nick}")
         rescue Exception => e
           result.store(user.login,"ERRO: #{e.message}")
         end
       end
       result
     end
+
+    
+    def self.unfollow_him(nick,offset)
+      result = {}
+      User.find(:all,:offset=>offset,:limit=>5).each do |user|
+        begin
+          user.twitter.post("/friendships/destroy/#{nick}.json")
+          result.store(user.login,"Deixou de Seguir #{nick}")
+        rescue Exception => e
+          result.store(user.login,"ERRO: #{e.message}")
+        end
+      end
+      result
+    end
+
+
 
 end
