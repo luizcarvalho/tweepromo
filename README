@@ -1,1 +1,21 @@
-- HASHTAGS E ASPAS
+== TWEEPROMO
+
+Projeto 100% funcional onde usamos autenticação ( OAUTH ) e manipulamos API do twitter
+usando o plugin twitter-auth.
+
+O projeto está rodando até essa versão no endereço
+http://tweepromo.heroku.com
+
+caso queira ver uma demonstração antes de usar, o projeto possui várias limitações
+impostas por mim mesmo, já que era pra ser de uso pessoal, mas acabei por decidir
+em coloca-lo a disposição de todos caso alguem queira um exemplo de como usar API do
+Twitter em seus projetos de maneira rápida e fácil.
+
+
+
+Qualquer dúvida:
+http://www.redrails.com.br
+luizcarvalho@redrails.com.br
+
+
+Abraços.
