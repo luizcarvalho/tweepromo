@@ -7,7 +7,7 @@ class User < TwitterAuth::GenericUser
       User.find(:all,:offset=>offset,:limit=>5).each do |user|
         begin
           user.twitter.post('/statuses/update.json', 'status' =>tweet)
-          result.store(user.login,"Enviado")
+          result.store(user.login,tweet)
         rescue Exception => e
           result.store(user.login,"ERRO: #{e.message}")
         end

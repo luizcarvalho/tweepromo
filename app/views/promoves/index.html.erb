@@ -29,7 +29,7 @@
           progress(item);
 
           if (action == "/postar"){
-            var action_url = "/postar?count="+item+"&tweet=<%= @tweet %>";
+            var action_url = "/postar?count="+item+"&tweet=<%= @tweeturl %>";
           }
           else {
             var action_url = "/seguir?count="+item+"&nick="+followin;
