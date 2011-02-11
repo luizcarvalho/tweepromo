@@ -105,9 +105,9 @@ function progress(quant){
 
     <fieldset>
       <legend>Resultado</legend>
-      <ul id="result_list" >
+      <select multiple size="15" style="width: 500px;background-color:black;color: #048BC1;" id="result_list">
+      </select>
 
-      </ul>
     </fieldset>
     <%= render :partial=>"follow",:locals=>{:promoters=>@promoters} %>
   </div>

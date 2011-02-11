@@ -16,7 +16,7 @@ class PromovesController < ApplicationController
     @count = (params["count"] || 0).to_i
     @max = User.count
     result = User.tweet_this(@tweet, @count)
-    result_tag = result.collect { |nick,r| "<li>#{nick} - #{r}</li>"  }
+    result_tag = result.collect { |nick,r| "<option>#{nick} - #{r}</option>"  }
     
     
     respond_to do |format|
@@ -33,7 +33,7 @@ class PromovesController < ApplicationController
     @count = (params["count"] || 0).to_i
     @max = User.count
     result = User.follow_him(@nick,@count)
-    result_tag = result.collect { |nick,r| "<li>#{nick} - #{r}</li>"  }
+    result_tag = result.collect { |nick,r| "<option>#{nick} - #{r}</option>"  }
     
     respond_to do |format|
       format.html {render :text=>(@count>@max) ? "done" : result_tag.to_s ,:layout=>false}
