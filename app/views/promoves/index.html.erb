@@ -36,7 +36,7 @@
           }
           $.post( action_url, function(data){
 
-            $('#result_list').append(data);
+            $('#result_list').prepend(data);
             // If the request was unsuccessful, make another attempt.
             if(data!="done"){
               queue.next();
@@ -56,10 +56,10 @@
       $.ajaxSetup({ cache: false });
 
       queue.add(<%= count=0 %>);
-      <% while count<=@max do %>
-      <% count+=5 %>
+<% while count<=@max do %>
+    <% count+=5 %>
           queue.add(<%= count %>);
-      <% end %>
+  <% end %>
         queue.start();
       });
     };
@@ -74,11 +74,11 @@
     };
 
 
-function progress(quant){
-  var total=<%= @max %>;
-  var percentage = Math.floor(100 * parseInt(quant) / parseInt(total));
-  $('#progressbar').progressBar(percentage);
-};
+    function progress(quant){
+      var total=<%= @max %>;
+      var percentage = Math.floor(100 * parseInt(quant) / parseInt(total));
+      $('#progressbar').progressBar(percentage);
+    };
   </script>
 
 
@@ -107,7 +107,6 @@ function progress(quant){
       <legend>Resultado</legend>
       <select multiple size="15" style="width: 500px;background-color:black;color: #048BC1;" id="result_list">
       </select>
-
     </fieldset>
     <%= render :partial=>"follow",:locals=>{:promoters=>@promoters} %>
   </div>
